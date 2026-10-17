@@ -1,0 +1,34 @@
+{
+  "name": "canvas-bot",
+  "description": "Pallas: an iMessage assistant that keeps your semester under control (Canvas, grades, deadlines, calendar).",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dry-run": "bun run src/index.ts --dry-run",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "demo": "bun run scripts/demo.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.3",
+    "@types/html-to-text": "^9.0.4"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "html-to-text": "^10.0.1",
+    "ical.js": "^2.2.1",
+    "openai": "^7.34.0",
+    "spectrum-ts": "^12.11.0",
+    "tsdav": "^2.5.0"
+  },
+  "optionalDependencies": {
+    "@spectrum-ts/imessage-local": "^12.11.0"
+  },
+  "engines": {
+    "bun": ">=1.2"
+  }
+}

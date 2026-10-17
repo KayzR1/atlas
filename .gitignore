@@ -1,0 +1,13 @@
+.env
+history.json
+node_modules
+bot.log
+*.log
+*.db
+*.db-*
+.scrub.local
+*.local
+
+# editor leftovers and local copies of the env file (.env.example stays tracked)
+.env.*
+!.env.example
